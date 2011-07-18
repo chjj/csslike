@@ -1,0 +1,9 @@
+{
+  "name": "csslike",
+  "description": "a css preprocessor",
+  "author": "Christopher Jeffrey",
+  "version": "0.0.1",
+  "main": "./lib/csslike.js",
+  "repository": "git://github.com/chjj/csslike.git",
+  "keywords": [ "css", "preprocessor" ]
+}
