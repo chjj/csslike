@@ -6,23 +6,23 @@ var css = require('../')
   , assert = require('assert');
 
 var str = fs.readFileSync(__dirname + '/test.css', 'utf8')
-  , old = fs.readFileSync(__dirname + '/out_good.log', 'utf8');
+  , old = fs.readFileSync(__dirname + '/test.log', 'utf8');
 
 var out = 
-util.inspect(lex(str))
-+ '\n\n\n\n' 
-+ '--------' 
-+ '--------'
-+ '--------'
-+ '--------'
-+ '--------'
-+ '--------'
-+ '--------'
-+ '--------'
-+ '--------'
-+ '--------' 
-+ '\n\n\n\n'
-+ parse(lex(str));
+  util.inspect(lex(str))
+  + '\n\n\n\n' 
+  + '--------' 
+  + '--------'
+  + '--------'
+  + '--------'
+  + '--------'
+  + '--------'
+  + '--------'
+  + '--------'
+  + '--------'
+  + '--------' 
+  + '\n\n\n\n'
+  + parse(lex(str));
 
 fs.writeFileSync(__dirname + '/out.log', out);
 
