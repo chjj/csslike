@@ -1,0 +1,3909 @@
+[ { type: 'comment',
+    text: '*\n\n * Dilated (https://github.com/chjj/dilated)\n\n * Copyright (c) 2011, Christopher Jeffrey.\n\n ',
+    line: 4 },
+  { type: 'comment',
+    text: '\n\n*\n\n * HTML5 Elements\n\n ',
+    line: 8 },
+  { type: 'rule',
+    selector: 'header, footer, nav, section, aside,\narticle, hgroup, figure, figcaption',
+    line: 11 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 11 },
+  { type: 'end', line: 11 },
+  { type: 'comment',
+    text: '\n\n*\n\n * Basic Elements\n\n ',
+    line: 15 },
+  { type: 'rule',
+    selector: '::selection, input::selection, textarea::selection',
+    line: 17 },
+  { type: 'property',
+    key: 'background',
+    val: 'rgba(0, 0, 0, 0.5)',
+    line: 18 },
+  { type: 'property',
+    key: 'color',
+    val: 'rgba(255, 255, 255, 0.8)',
+    line: 19 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'none',
+    line: 20 },
+  { type: 'end', line: 21 },
+  { type: 'rule',
+    selector: '::-moz-selection, input::-moz-selection, textarea::-moz-selection',
+    line: 22 },
+  { type: 'property',
+    key: 'background',
+    val: 'rgba(0, 0, 0, 0.5)',
+    line: 23 },
+  { type: 'property',
+    key: 'color',
+    val: 'rgba(255, 255, 255, 0.8)',
+    line: 24 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'none',
+    line: 25 },
+  { type: 'end', line: 26 },
+  { type: 'comment',
+    text: '\n\n*\n\n * Text Level\n\n ',
+    line: 30 },
+  { type: 'rule', selector: 'a, h1 > a:hover', line: 32 },
+  { type: 'property',
+    key: 'text-decoration',
+    val: 'none',
+    line: 32 },
+  { type: 'end', line: 32 },
+  { type: 'rule', selector: 'a:focus', line: 33 },
+  { type: 'property',
+    key: 'outline',
+    val: 'none',
+    line: 33 },
+  { type: 'end', line: 33 },
+  { type: 'rule',
+    selector: 'a:hover, a:focus',
+    line: 34 },
+  { type: 'property',
+    key: 'text-decoration',
+    val: 'underline',
+    line: 34 },
+  { type: 'end', line: 34 },
+  { type: 'rule', selector: 'abbr', line: 36 },
+  { type: 'property',
+    key: 'border',
+    val: 'none',
+    line: 36 },
+  { type: 'property',
+    key: 'text-decoration',
+    val: 'none',
+    line: 36 },
+  { type: 'end', line: 36 },
+  { type: 'rule', selector: 'abbr[title]', line: 37 },
+  { type: 'property',
+    key: 'cursor',
+    val: 'help',
+    line: 37 },
+  { type: 'property',
+    key: 'border-bottom',
+    val: 'rgba(0, 0, 0, 0.15) solid 1px',
+    line: 37 },
+  { type: 'end', line: 37 },
+  { type: 'rule', selector: 'p > code, samp', line: 39 },
+  { type: 'property',
+    key: 'background',
+    val: 'rgba(255, 255, 255, 0.3)',
+    line: 40 },
+  { type: 'property',
+    key: 'border',
+    val: 'rgba(255, 255, 255, 0.3) solid 1px',
+    line: 41 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'none',
+    line: 42 },
+  { type: 'property',
+    key: 'font',
+    val: '14/20px monospace',
+    line: 42 },
+  { type: 'end', line: 43 },
+  { type: 'rule', selector: 'mark', line: 45 },
+  { type: 'property',
+    key: 'background',
+    val: 'rgba(255, 255, 255, 0.3)',
+    line: 45 },
+  { type: 'end', line: 45 },
+  { type: 'rule', selector: 'small', line: 46 },
+  { type: 'property',
+    key: 'font-size',
+    val: '11px',
+    line: 46 },
+  { type: 'end', line: 46 },
+  { type: 'comment',
+    text: '\n\n*\n\n * Content Flow\n\n ',
+    line: 50 },
+  { type: 'rule',
+    selector: 'p, ul, ol, dl, dd, figure,\nblockquote, pre, hr, form',
+    line: 53 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 0 20px',
+    line: 54 },
+  { type: 'property', key: 'padding', val: '0', line: 54 },
+  { type: 'property',
+    key: 'word-wrap',
+    val: 'break-word',
+    line: 55 },
+  { type: 'end', line: 56 },
+  { type: 'comment',
+    text: '\n\n*\n\n * Content Blocks\n\n ',
+    line: 60 },
+  { type: 'rule',
+    selector: 'figure, blockquote, pre',
+    line: 62 },
+  { type: 'property',
+    key: 'padding',
+    val: '20px',
+    line: 62 },
+  { type: 'end', line: 62 },
+  { type: 'rule',
+    selector: 'figure > *, blockquote > *, pre > *',
+    line: 63 },
+  { type: 'property', key: 'padding', val: '0', line: 64 },
+  { type: 'property',
+    key: 'background',
+    val: 'transparent !important',
+    line: 65 },
+  { type: 'end', line: 66 },
+  { type: 'rule', selector: 'figcaption', line: 67 },
+  { type: 'property',
+    key: 'margin',
+    val: '20px 20px 0 20px',
+    line: 67 },
+  { type: 'end', line: 67 },
+  { type: 'rule', selector: 'blockquote', line: 68 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '45px',
+    line: 68 },
+  { type: 'property',
+    key: 'padding-bottom',
+    val: '1px',
+    line: 68 },
+  { type: 'property',
+    key: 'margin-top',
+    val: '-1px',
+    line: 68 },
+  { type: 'end', line: 68 },
+  { type: 'rule',
+    selector: 'blockquote:before',
+    line: 69 },
+  { type: 'property',
+    key: 'content',
+    val: '"“"',
+    line: 70 },
+  { type: 'property',
+    key: 'float',
+    val: 'left',
+    line: 70 },
+  { type: 'property',
+    key: 'margin',
+    val: '-30px 0 0 -65px',
+    line: 71 },
+  { type: 'property',
+    key: 'font',
+    val: '90px/1 serif',
+    line: 71 },
+  { type: 'end', line: 72 },
+  { type: 'rule',
+    selector: 'blockquote > cite',
+    line: 73 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 73 },
+  { type: 'property',
+    key: 'margin',
+    val: '20px 40px',
+    line: 73 },
+  { type: 'property',
+    key: 'font-style',
+    val: 'italic',
+    line: 73 },
+  { type: 'end', line: 73 },
+  { type: 'rule', selector: 'pre', line: 74 },
+  { type: 'property',
+    key: 'white-space',
+    val: 'pre-wrap',
+    line: 74 },
+  { type: 'end', line: 74 },
+  { type: 'rule', selector: 'pre > code', line: 75 },
+  { type: 'property',
+    key: 'font-size',
+    val: '11px',
+    line: 75 },
+  { type: 'end', line: 75 },
+  { type: 'rule',
+    selector: 'pre > code[title]:before',
+    line: 76 },
+  { type: 'property',
+    key: 'float',
+    val: 'right',
+    line: 77 },
+  { type: 'property',
+    key: 'margin',
+    val: '-10px -5px 0 0',
+    line: 77 },
+  { type: 'property',
+    key: 'content',
+    val: '"[" attr(title) "]"',
+    line: 78 },
+  { type: 'end', line: 79 },
+  { type: 'rule',
+    selector: 'h1, h2, h3, h4, h5, h6, dt',
+    line: 81 },
+  { type: 'property',
+    key: 'font',
+    val: 'normal 60px/20px serif',
+    line: 82 },
+  { type: 'property',
+    key: 'letter-spacing',
+    val: '0.05em',
+    line: 83 },
+  { type: 'property', key: 'padding', val: '0', line: 84 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 0 20px',
+    line: 84 },
+  { type: 'end', line: 85 },
+  { type: 'rule', selector: 'h1', line: 86 },
+  { type: 'property',
+    key: 'line-height',
+    val: '60px',
+    line: 86 },
+  { type: 'end', line: 86 },
+  { type: 'rule', selector: 'h2', line: 87 },
+  { type: 'property',
+    key: 'font-size',
+    val: '26px',
+    line: 87 },
+  { type: 'end', line: 87 },
+  { type: 'rule', selector: 'h3, dt', line: 88 },
+  { type: 'property',
+    key: 'font-size',
+    val: '22px',
+    line: 88 },
+  { type: 'end', line: 88 },
+  { type: 'rule', selector: 'h4', line: 89 },
+  { type: 'property',
+    key: 'font-size',
+    val: '18px',
+    line: 89 },
+  { type: 'end', line: 89 },
+  { type: 'rule', selector: 'h5, h6', line: 90 },
+  { type: 'property',
+    key: 'font-size',
+    val: '16px',
+    line: 90 },
+  { type: 'end', line: 90 },
+  { type: 'rule', selector: 'hr', line: 92 },
+  { type: 'property',
+    key: 'height',
+    val: 'auto',
+    line: 93 },
+  { type: 'property',
+    key: 'border',
+    val: 'none',
+    line: 93 },
+  { type: 'property',
+    key: 'font',
+    val: 'italic 60px/50px serif',
+    line: 93 },
+  { type: 'property',
+    key: 'text-align',
+    val: 'center',
+    line: 94 },
+  { type: 'property',
+    key: 'cursor',
+    val: 'default',
+    line: 94 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 auto 10px',
+    line: 95 },
+  { type: 'property',
+    key: 'width',
+    val: '30px',
+    line: 95 },
+  { type: 'property',
+    key: 'height',
+    val: '60px',
+    line: 95 },
+  { type: 'property',
+    key: '-webkit-transform',
+    val: 'rotate(71deg)',
+    line: 96 },
+  { type: 'property',
+    key: '-moz-transform',
+    val: 'rotate(71deg)',
+    line: 96 },
+  { type: 'property',
+    key: '-o-transform',
+    val: 'rotate(71deg)',
+    line: 97 },
+  { type: 'property',
+    key: 'transform',
+    val: 'rotate(71deg)',
+    line: 97 },
+  { type: 'end', line: 98 },
+  { type: 'rule', selector: 'hr:before', line: 99 },
+  { type: 'property',
+    key: 'content',
+    val: '"§"',
+    line: 99 },
+  { type: 'end', line: 99 },
+  { type: 'rule', selector: 'img', line: 101 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 102 },
+  { type: 'property',
+    key: 'outline',
+    val: 'none',
+    line: 102 },
+  { type: 'property',
+    key: 'border',
+    val: 'solid 1px',
+    line: 102 },
+  { type: 'property',
+    key: 'opacity',
+    val: '0.6',
+    line: 102 },
+  { type: 'property',
+    key: '-webkit-transition',
+    val: '0.25s',
+    line: 103 },
+  { type: 'property',
+    key: '-moz-transition',
+    val: '0.25s',
+    line: 104 },
+  { type: 'property',
+    key: '-o-transition',
+    val: '0.25s',
+    line: 104 },
+  { type: 'property',
+    key: 'transition',
+    val: '0.25s',
+    line: 104 },
+  { type: 'end', line: 105 },
+  { type: 'rule',
+    selector: ':hover > img, img:hover',
+    line: 106 },
+  { type: 'property',
+    key: 'opacity',
+    val: '1',
+    line: 106 },
+  { type: 'end', line: 106 },
+  { type: 'rule', selector: 'p > img', line: 107 },
+  { type: 'property',
+    key: 'float',
+    val: 'right',
+    line: 107 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 0 20px 20px',
+    line: 107 },
+  { type: 'end', line: 107 },
+  { type: 'rule',
+    selector: 'p:nth-of-type(even) > img',
+    line: 108 },
+  { type: 'property',
+    key: 'float',
+    val: 'left',
+    line: 108 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 20px 20px 0',
+    line: 108 },
+  { type: 'end', line: 108 },
+  { type: 'comment',
+    text: '\n\n*\n\n * Form Controls\n\n ',
+    line: 112 },
+  { type: 'rule',
+    selector: 'input, textarea',
+    line: 114 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 115 },
+  { type: 'property',
+    key: 'height',
+    val: '20px',
+    line: 115 },
+  { type: 'property',
+    key: 'font',
+    val: 'inherit',
+    line: 115 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'inherit',
+    line: 115 },
+  { type: 'property', key: 'margin', val: '0', line: 116 },
+  { type: 'property',
+    key: 'padding',
+    val: '0 2px',
+    line: 116 },
+  { type: 'property',
+    key: '-webkit-box-sizing',
+    val: 'border-box',
+    line: 116 },
+  { type: 'property',
+    key: '-moz-box-sizing',
+    val: 'border-box',
+    line: 117 },
+  { type: 'property',
+    key: 'box-sizing',
+    val: 'border-box',
+    line: 117 },
+  { type: 'end', line: 118 },
+  { type: 'comment',
+    text: '\n   get rid of google chrome outline ',
+    line: 119 },
+  { type: 'rule',
+    selector: 'input:focus, textarea:focus',
+    line: 120 },
+  { type: 'property',
+    key: 'outline',
+    val: 'none',
+    line: 120 },
+  { type: 'end', line: 120 },
+  { type: 'rule',
+    selector: 'input[type="checkbox"]',
+    line: 121 },
+  { type: 'property',
+    key: 'display',
+    val: 'inline-block',
+    line: 122 },
+  { type: 'property',
+    key: 'height',
+    val: 'auto',
+    line: 122 },
+  { type: 'property',
+    key: 'width',
+    val: 'auto',
+    line: 122 },
+  { type: 'property', key: 'margin', val: '0', line: 123 },
+  { type: 'property',
+    key: 'padding',
+    val: '0',
+    line: 123 },
+  { type: 'property',
+    key: 'vertical-align',
+    val: 'middle',
+    line: 123 },
+  { type: 'end', line: 124 },
+  { type: 'rule',
+    selector: 'input[type="submit"]',
+    line: 125 },
+  { type: 'property',
+    key: 'width',
+    val: 'auto',
+    line: 126 },
+  { type: 'property',
+    key: 'background',
+    val: 'transparent',
+    line: 126 },
+  { type: 'property',
+    key: '-webkit-box-shadow',
+    val: 'none',
+    line: 126 },
+  { type: 'property',
+    key: '-moz-box-shadow',
+    val: 'none',
+    line: 127 },
+  { type: 'property',
+    key: 'box-shadow',
+    val: 'none',
+    line: 127 },
+  { type: 'property',
+    key: 'overflow',
+    val: 'hidden',
+    line: 127 },
+  { type: 'end', line: 128 },
+  { type: 'comment',
+    text: '\n\n*\n\n * Paragraphs\n\n ',
+    line: 132 },
+  { type: 'rule', selector: 'p', line: 134 },
+  { type: 'property',
+    key: 'font',
+    val: '12px/20px verdana',
+    line: 134 },
+  { type: 'end', line: 134 },
+  { type: 'rule',
+    selector: 'body > article > header + p,\nh1 + p',
+    line: 136 },
+  { type: 'property',
+    key: 'min-height',
+    val: '40px',
+    line: 136 },
+  { type: 'end', line: 136 },
+  { type: 'rule',
+    selector: 'body > article > header + p:first-line,\nh1 + p:first-line',
+    line: 138 },
+  { type: 'property',
+    key: 'font-weight',
+    val: 'bold',
+    line: 138 },
+  { type: 'end', line: 138 },
+  { type: 'rule',
+    selector: 'blockquote > p:first-child:first-letter,\nbody > article > header + p:first-letter,\nh1 + p:first-letter, aside[role="note"]:first-letter,\nform > p:first-letter',
+    line: 143 },
+  { type: 'property',
+    key: 'float',
+    val: 'left',
+    line: 144 },
+  { type: 'property',
+    key: 'font',
+    val: '40px/28px serif',
+    line: 144 },
+  { type: 'property',
+    key: 'padding',
+    val: '8px 3px 0 0',
+    line: 144 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'rgba(255, 255, 255, 0.3) 1px 1px 1px',
+    line: 145 },
+  { type: 'end', line: 146 },
+  { type: 'comment',
+    text: '\n\n*\n\n * Lists\n\n ',
+    line: 150 },
+  { type: 'rule', selector: 'ol, ul', line: 152 },
+  { type: 'property',
+    key: 'padding-left',
+    val: '20px',
+    line: 152 },
+  { type: 'end', line: 152 },
+  { type: 'rule', selector: 'li', line: 153 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 0 10px',
+    line: 153 },
+  { type: 'property',
+    key: 'padding',
+    val: '0',
+    line: 153 },
+  { type: 'end', line: 153 },
+  { type: 'rule',
+    selector: 'li:nth-child(odd):last-child',
+    line: 154 },
+  { type: 'property',
+    key: 'padding-bottom',
+    val: '10px',
+    line: 154 },
+  { type: 'end', line: 154 },
+  { type: 'rule', selector: 'dd', line: 155 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '20px',
+    line: 155 },
+  { type: 'end', line: 155 },
+  { type: 'comment',
+    text: '\n\n simple rules for browsers that\n\n * dont support css3 media queries\n\n ',
+    line: 159 },
+  { type: 'rule', selector: 'html', line: 160 },
+  { type: 'property',
+    key: 'max-width',
+    val: '720px',
+    line: 161 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 auto',
+    line: 161 },
+  { type: 'property',
+    key: 'behavior',
+    val: 'url(/shim.htc)',
+    line: 162 },
+  { type: 'end', line: 163 },
+  { type: 'rule', selector: 'textarea', line: 164 },
+  { type: 'property',
+    key: 'height',
+    val: '200px',
+    line: 164 },
+  { type: 'property',
+    key: 'width',
+    val: '100%',
+    line: 164 },
+  { type: 'end', line: 164 },
+  { type: 'comment',
+    text: '\n\n*\n\n * Layout Design\n\n ',
+    line: 168 },
+  { type: 'nested_at',
+    name: '@media',
+    params: 'only all',
+    line: 170 },
+  { type: 'rule',
+    selector: 'html, body > header > *',
+    line: 171 },
+  { type: 'property',
+    key: 'width',
+    val: '840px',
+    line: 171 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 auto',
+    line: 171 },
+  { type: 'end', line: 171 },
+  { type: 'rule', selector: 'html', line: 172 },
+  { type: 'property',
+    key: 'font',
+    val: '12px/20px verdana, sans-serif',
+    line: 173 },
+  { type: 'property',
+    key: 'overflow-y',
+    val: 'scroll',
+    line: 173 },
+  { type: 'property',
+    key: 'height',
+    val: '100%',
+    line: 174 },
+  { type: 'property',
+    key: 'padding-bottom',
+    val: '65px',
+    line: 174 },
+  { type: 'property',
+    key: '-webkit-box-sizing',
+    val: 'border-box',
+    line: 174 },
+  { type: 'property',
+    key: '-moz-box-sizing',
+    val: 'border-box',
+    line: 175 },
+  { type: 'property',
+    key: 'box-sizing',
+    val: 'border-box',
+    line: 175 },
+  { type: 'property',
+    key: 'max-width',
+    val: 'none',
+    line: 175 },
+  { type: 'end', line: 176 },
+  { type: 'rule', selector: 'head', line: 177 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 178 },
+  { type: 'property',
+    key: 'position',
+    val: 'fixed',
+    line: 178 },
+  { type: 'property',
+    key: 'z-index',
+    val: '1',
+    line: 178 },
+  { type: 'property', key: 'left', val: '0', line: 178 },
+  { type: 'property', key: 'right', val: '0', line: 178 },
+  { type: 'property', key: 'bottom', val: '0', line: 178 },
+  { type: 'property',
+    key: 'height',
+    val: '9px',
+    line: 179 },
+  { type: 'property',
+    key: 'border-top',
+    val: 'solid 1px',
+    line: 179 },
+  { type: 'end', line: 180 },
+  { type: 'rule', selector: 'head > *', line: 181 },
+  { type: 'property',
+    key: 'display',
+    val: 'none',
+    line: 181 },
+  { type: 'end', line: 181 },
+  { type: 'rule', selector: 'body', line: 182 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 60px',
+    line: 183 },
+  { type: 'property',
+    key: 'min-height',
+    val: '100%',
+    line: 183 },
+  { type: 'property',
+    key: 'padding',
+    val: '20px',
+    line: 183 },
+  { type: 'end', line: 184 },
+  { type: 'comment',
+    text: '\n\n  *\n\n   * Page Header\n\n   ',
+    line: 188 },
+  { type: 'rule', selector: 'body > header', line: 190 },
+  { type: 'property',
+    key: 'height',
+    val: '24px',
+    line: 191 },
+  { type: 'property',
+    key: 'position',
+    val: 'fixed',
+    line: 191 },
+  { type: 'property',
+    key: 'z-index',
+    val: '1',
+    line: 191 },
+  { type: 'property', key: 'top', val: '0', line: 191 },
+  { type: 'property', key: 'left', val: '0', line: 192 },
+  { type: 'property', key: 'right', val: '0', line: 192 },
+  { type: 'property',
+    key: 'border-bottom',
+    val: 'solid 1px',
+    line: 192 },
+  { type: 'end', line: 193 },
+  { type: 'comment',
+    text: '\n\n    *\n\n     * Header Heading\n\n     ',
+    line: 197 },
+  { type: 'rule', selector: 'a[rel~="home"]', line: 199 },
+  { type: 'property',
+    key: 'position',
+    val: 'absolute',
+    line: 200 },
+  { type: 'property',
+    key: 'z-index',
+    val: '1',
+    line: 200 },
+  { type: 'property',
+    key: 'height',
+    val: '35px',
+    line: 200 },
+  { type: 'property',
+    key: 'width',
+    val: '35px',
+    line: 201 },
+  { type: 'property',
+    key: 'padding',
+    val: '0',
+    line: 201 },
+  { type: 'property',
+    key: 'letter-spacing',
+    val: '0',
+    line: 201 },
+  { type: 'property',
+    key: 'margin',
+    val: '8px 0 0 11px',
+    line: 202 },
+  { type: 'property',
+    key: 'font',
+    val: '90px/30px verdana',
+    line: 202 },
+  { type: 'property',
+    key: 'overflow',
+    val: 'hidden',
+    line: 203 },
+  { type: 'property',
+    key: 'border',
+    val: 'solid 1px',
+    line: 203 },
+  { type: 'end', line: 204 },
+  { type: 'rule',
+    selector: 'a[rel~="home"]:before',
+    line: 205 },
+  { type: 'property',
+    key: 'content',
+    val: '"ε"',
+    line: 206 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 206 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '3px',
+    line: 207 },
+  { type: 'property',
+    key: 'padding-bottom',
+    val: '30px',
+    line: 207 },
+  { type: 'comment',
+    text: '\n         testing ',
+    line: 208 },
+  { type: 'property',
+    key: 'content',
+    val: '"d"',
+    line: 209 },
+  { type: 'property',
+    key: 'font-size',
+    val: '90px',
+    line: 209 },
+  { type: 'property',
+    key: 'font-family',
+    val: 'serif',
+    line: 209 },
+  { type: 'end', line: 210 },
+  { type: 'comment',
+    text: '\n\n       make the logo animate every 10 seconds ',
+    line: 212 },
+  { type: 'nested_at',
+    name: '@-webkit-keyframes',
+    params: 'heartbeat',
+    line: 213 },
+  { type: 'rule', selector: '4%', line: 214 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: '#fff 1px 1px 20px',
+    line: 214 },
+  { type: 'end', line: 214 },
+  { type: 'rule', selector: '0%, 9%, 100%', line: 215 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: '#fff 1px 1px',
+    line: 215 },
+  { type: 'end', line: 215 },
+  { type: 'end', line: 216 },
+  { type: 'rule', selector: 'a[rel~=home]', line: 217 },
+  { type: 'property',
+    key: '-webkit-animation',
+    val: 'heartbeat 11s linear 0s infinite',
+    line: 217 },
+  { type: 'end', line: 217 },
+  { type: 'comment',
+    text: '\n\n    *\n\n     * Header Nav\n\n     ',
+    line: 221 },
+  { type: 'rule', selector: 'nav > ul', line: 223 },
+  { type: 'property',
+    key: 'list-style',
+    val: 'none',
+    line: 223 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 0 0 60px',
+    line: 223 },
+  { type: 'property',
+    key: 'padding',
+    val: '0',
+    line: 223 },
+  { type: 'property',
+    key: 'margin-leftz',
+    val: '70px',
+    line: 223 },
+  { type: 'end', line: 223 },
+  { type: 'comment',
+    text: '  === testing margin === ',
+    line: 223 },
+  { type: 'rule', selector: 'nav li', line: 224 },
+  { type: 'property',
+    key: 'margin',
+    val: '6px 20px 0 5px',
+    line: 225 },
+  { type: 'property',
+    key: 'float',
+    val: 'left',
+    line: 225 },
+  { type: 'property',
+    key: 'line-height',
+    val: '1',
+    line: 225 },
+  { type: 'property',
+    key: 'letter-spacing',
+    val: '2px',
+    line: 226 },
+  { type: 'property',
+    key: 'text-transform',
+    val: 'lowercase',
+    line: 226 },
+  { type: 'end', line: 227 },
+  { type: 'comment',
+    text: '\n         hack to fix look ',
+    line: 228 },
+  { type: 'rule',
+    selector: 'nav a[rel~="directory"], nav a[rel~="tag"]',
+    line: 229 },
+  { type: 'property',
+    key: 'float',
+    val: 'left',
+    line: 229 },
+  { type: 'property',
+    key: 'margin-top',
+    val: '1px',
+    line: 229 },
+  { type: 'comment',
+    text: ' padding-top: 1px; display: block;',
+    line: 229 },
+  { type: 'end', line: 229 },
+  { type: 'comment',
+    text: '\n         bullet ',
+    line: 230 },
+  { type: 'rule',
+    selector: 'nav li:first-child::before',
+    line: 231 },
+  { type: 'property',
+    key: 'content',
+    val: '"•"',
+    line: 232 },
+  { type: 'property',
+    key: 'float',
+    val: 'right',
+    line: 232 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 15px',
+    line: 232 },
+  { type: 'property',
+    key: 'font-size',
+    val: '13px',
+    line: 233 },
+  { type: 'property',
+    key: 'line-height',
+    val: '14px',
+    line: 233 },
+  { type: 'end', line: 234 },
+  { type: 'rule',
+    selector: 'nav li:first-child + li',
+    line: 235 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '-22px',
+    line: 235 },
+  { type: 'end', line: 235 },
+  { type: 'comment',
+    text: '\n\n  *\n\n   * Content Section\n\n   ',
+    line: 239 },
+  { type: 'rule',
+    selector: 'body:before, body:after',
+    line: 241 },
+  { type: 'property',
+    key: 'content',
+    val: '"\\20"',
+    line: 242 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 242 },
+  { type: 'property',
+    key: 'margin-bottom',
+    val: '19px',
+    line: 243 },
+  { type: 'end', line: 244 },
+  { type: 'comment',
+    text: '\n\n    *\n\n     * Content Header\n\n     ',
+    line: 248 },
+  { type: 'rule', selector: 'header + * h1', line: 250 },
+  { type: 'property',
+    key: 'font',
+    val: '60px/60px arial',
+    line: 251 },
+  { type: 'property',
+    key: 'letter-spacing',
+    val: '0',
+    line: 251 },
+  { type: 'property',
+    key: 'word-wrap',
+    val: 'break-word',
+    line: 251 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '0',
+    line: 252 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '0',
+    line: 252 },
+  { type: 'property',
+    key: 'padding',
+    val: '10px 0',
+    line: 252 },
+  { type: 'end', line: 253 },
+  { type: 'rule',
+    selector: 'header + * h1 > a[href]',
+    line: 254 },
+  { type: 'property',
+    key: 'color',
+    val: 'inherit',
+    line: 254 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'inherit',
+    line: 254 },
+  { type: 'end', line: 254 },
+  { type: 'rule', selector: 'h1 + time', line: 255 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 256 },
+  { type: 'property',
+    key: 'font',
+    val: '14px/20px serif',
+    line: 256 },
+  { type: 'property',
+    key: 'margin-bottom',
+    val: '20px',
+    line: 256 },
+  { type: 'property',
+    key: 'text-transform',
+    val: 'uppercase',
+    line: 257 },
+  { type: 'property',
+    key: 'letter-spacing',
+    val: '2px',
+    line: 257 },
+  { type: 'end', line: 258 },
+  { type: 'rule', selector: 'time > a[href]', line: 259 },
+  { type: 'property',
+    key: 'color',
+    val: 'inherit',
+    line: 259 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'inherit',
+    line: 259 },
+  { type: 'end', line: 259 },
+  { type: 'rule', selector: 'time sup', line: 260 },
+  { type: 'property',
+    key: 'font-size',
+    val: '70%',
+    line: 260 },
+  { type: 'property',
+    key: 'line-height',
+    val: '0',
+    line: 260 },
+  { type: 'property',
+    key: 'text-transform',
+    val: 'none',
+    line: 260 },
+  { type: 'end', line: 260 },
+  { type: 'comment',
+    text: '\n\n    *\n\n     * Aside Boxes\n\n     ',
+    line: 264 },
+  { type: 'rule',
+    selector: 'aside[role="note"]',
+    line: 266 },
+  { type: 'property',
+    key: 'width',
+    val: '160px',
+    line: 267 },
+  { type: 'property',
+    key: 'padding',
+    val: '0px',
+    line: 267 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 0 20px 20px',
+    line: 268 },
+  { type: 'property',
+    key: 'float',
+    val: 'right',
+    line: 269 },
+  { type: 'property',
+    key: 'font-size',
+    val: '10px',
+    line: 269 },
+  { type: 'end', line: 270 },
+  { type: 'rule',
+    selector: 'aside[role="note"] a',
+    line: 271 },
+  { type: 'property',
+    key: 'border-bottom',
+    val: 'dotted 1px',
+    line: 272 },
+  { type: 'property',
+    key: 'text-decoration',
+    val: 'none !important',
+    line: 273 },
+  { type: 'end', line: 274 },
+  { type: 'comment',
+    text: '\n\n    *\n\n     * Form Controls\n\n     ',
+    line: 278 },
+  { type: 'rule', selector: 'label', line: 280 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 281 },
+  { type: 'property',
+    key: 'margin-bottom',
+    val: '8px',
+    line: 281 },
+  { type: 'property',
+    key: 'letter-spacing',
+    val: '1px',
+    line: 281 },
+  { type: 'property',
+    key: 'text-transform',
+    val: 'uppercase',
+    line: 282 },
+  { type: 'property',
+    key: 'border-left',
+    val: 'rgba(0, 0, 0, 0.075) solid 25px',
+    line: 282 },
+  { type: 'property',
+    key: 'padding-left',
+    val: '15px',
+    line: 283 },
+  { type: 'end', line: 284 },
+  { type: 'rule',
+    selector: 'label > input, textarea',
+    line: 285 },
+  { type: 'property',
+    key: 'margin-top',
+    val: '2px',
+    line: 286 },
+  { type: 'property',
+    key: 'border',
+    val: 'solid 1px',
+    line: 286 },
+  { type: 'property',
+    key: '-webkit-box-shadow',
+    val: 'rgba(0, 0, 0, 0.25) 1px 1px 2px inset',
+    line: 287 },
+  { type: 'property',
+    key: '-moz-box-shadow',
+    val: 'rgba(0, 0, 0, 0.25) 1px 1px 2px inset',
+    line: 288 },
+  { type: 'property',
+    key: 'box-shadow',
+    val: 'rgba(0, 0, 0, 0.25) 1px 1px 2px inset',
+    line: 289 },
+  { type: 'end', line: 290 },
+  { type: 'rule', selector: 'textarea', line: 291 },
+  { type: 'property',
+    key: 'width',
+    val: '100%',
+    line: 292 },
+  { type: 'property',
+    key: 'height',
+    val: '188px',
+    line: 292 },
+  { type: 'property',
+    key: 'padding',
+    val: '5px',
+    line: 292 },
+  { type: 'property',
+    key: 'overflow-x',
+    val: 'hidden',
+    line: 293 },
+  { type: 'property',
+    key: 'resize',
+    val: 'vertical',
+    line: 293 },
+  { type: 'property',
+    key: 'margin',
+    val: '10px 0 8px',
+    line: 293 },
+  { type: 'end', line: 294 },
+  { type: 'rule',
+    selector: 'h1 ~ form textarea',
+    line: 295 },
+  { type: 'property',
+    key: 'height',
+    val: '400px',
+    line: 296 },
+  { type: 'property',
+    key: 'font-size',
+    val: '11px',
+    line: 296 },
+  { type: 'property',
+    key: 'font-family',
+    val: 'monospace',
+    line: 297 },
+  { type: 'end', line: 298 },
+  { type: 'rule', selector: 'label > input', line: 299 },
+  { type: 'property',
+    key: 'width',
+    val: '70%',
+    line: 299 },
+  { type: 'property',
+    key: 'float',
+    val: 'right',
+    line: 299 },
+  { type: 'end', line: 299 },
+  { type: 'rule',
+    selector: 'label > input[type="checkbox"]',
+    line: 300 },
+  { type: 'property',
+    key: 'float',
+    val: 'none',
+    line: 301 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '-32px',
+    line: 301 },
+  { type: 'property',
+    key: 'margin-top',
+    val: '-5px',
+    line: 302 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '5px',
+    line: 302 },
+  { type: 'end', line: 303 },
+  { type: 'rule',
+    selector: 'label ~ input[type="submit"]',
+    line: 304 },
+  { type: 'property',
+    key: 'width',
+    val: 'auto',
+    line: 305 },
+  { type: 'property',
+    key: 'height',
+    val: 'auto',
+    line: 305 },
+  { type: 'property',
+    key: 'cursor',
+    val: 'pointer',
+    line: 305 },
+  { type: 'property',
+    key: 'border',
+    val: 'none',
+    line: 306 },
+  { type: 'property',
+    key: 'margin-top',
+    val: '2px',
+    line: 306 },
+  { type: 'property',
+    key: 'font-size',
+    val: '14px',
+    line: 307 },
+  { type: 'property',
+    key: 'text-transform',
+    val: 'uppercase',
+    line: 307 },
+  { type: 'property',
+    key: 'float',
+    val: 'right',
+    line: 308 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '30px',
+    line: 308 },
+  { type: 'end', line: 309 },
+  { type: 'rule',
+    selector: 'h1 + form[action*="admin"]',
+    line: 310 },
+  { type: 'property',
+    key: 'float',
+    val: 'left',
+    line: 310 },
+  { type: 'end', line: 310 },
+  { type: 'rule',
+    selector: 'input[type="password"]',
+    line: 311 },
+  { type: 'property',
+    key: 'width',
+    val: '200px',
+    line: 311 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 311 },
+  { type: 'property',
+    key: 'float',
+    val: 'none',
+    line: 311 },
+  { type: 'end', line: 311 },
+  { type: 'rule',
+    selector: 'form[role="button"], form[role="button"] > input',
+    line: 312 },
+  { type: 'property',
+    key: 'display',
+    val: 'inline-block',
+    line: 313 },
+  { type: 'property',
+    key: 'padding',
+    val: '0',
+    line: 313 },
+  { type: 'property', key: 'margin', val: '0', line: 313 },
+  { type: 'property',
+    key: 'background',
+    val: 'none',
+    line: 314 },
+  { type: 'property',
+    key: 'border',
+    val: 'none',
+    line: 314 },
+  { type: 'end', line: 315 },
+  { type: 'rule',
+    selector: 'form[role="button"] > input:hover',
+    line: 316 },
+  { type: 'property',
+    key: 'cursor',
+    val: 'pointer',
+    line: 317 },
+  { type: 'property',
+    key: 'text-decoration',
+    val: 'underline',
+    line: 318 },
+  { type: 'end', line: 319 },
+  { type: 'comment',
+    text: '\n\n    *\n\n     * Browse List\n\n     ',
+    line: 323 },
+  { type: 'rule',
+    selector: 'section > ol > li',
+    line: 325 },
+  { type: 'property',
+    key: 'font-size',
+    val: '13px',
+    line: 325 },
+  { type: 'end', line: 325 },
+  { type: 'rule',
+    selector: 'section > ol time',
+    line: 326 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 326 },
+  { type: 'end', line: 326 },
+  { type: 'comment',
+    text: '\n\n    *\n\n     * Content Footer\n\n     ',
+    line: 330 },
+  { type: 'rule',
+    selector: 'header + * > footer',
+    line: 332 },
+  { type: 'property',
+    key: 'position',
+    val: 'fixed',
+    line: 333 },
+  { type: 'property',
+    key: 'z-index',
+    val: '1',
+    line: 333 },
+  { type: 'property', key: 'top', val: '40px', line: 333 },
+  { type: 'property', key: 'left', val: '50%', line: 333 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '360px',
+    line: 334 },
+  { type: 'property',
+    key: 'width',
+    val: '60px',
+    line: 334 },
+  { type: 'property',
+    key: 'height',
+    val: '120px',
+    line: 334 },
+  { type: 'end', line: 335 },
+  { type: 'rule',
+    selector: 'header + * > footer > a',
+    line: 336 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 337 },
+  { type: 'property',
+    key: 'overflow',
+    val: 'hidden',
+    line: 337 },
+  { type: 'property',
+    key: 'width',
+    val: '60px',
+    line: 338 },
+  { type: 'property',
+    key: 'height',
+    val: '50px',
+    line: 338 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'rgba(255, 255, 255, 0.2) 1px 1px, #000 -1px -1px',
+    line: 339 },
+  { type: 'end', line: 340 },
+  { type: 'rule',
+    selector: 'header + * > footer > a:hover',
+    line: 341 },
+  { type: 'property',
+    key: 'text-decoration',
+    val: 'none',
+    line: 341 },
+  { type: 'end', line: 341 },
+  { type: 'rule',
+    selector: 'header + * > footer > a:first-child',
+    line: 342 },
+  { type: 'property',
+    key: 'position',
+    val: 'absolute',
+    line: 342 },
+  { type: 'property', key: 'bottom', val: '0', line: 342 },
+  { type: 'end', line: 342 },
+  { type: 'rule',
+    selector: 'header + * > footer > a:first-child + a',
+    line: 343 },
+  { type: 'property',
+    key: 'position',
+    val: 'absolute',
+    line: 343 },
+  { type: 'property', key: 'top', val: '0', line: 343 },
+  { type: 'end', line: 343 },
+  { type: 'rule',
+    selector: 'header + * > footer > a:only-child',
+    line: 344 },
+  { type: 'property',
+    key: 'bottom',
+    val: 'auto',
+    line: 344 },
+  { type: 'end', line: 344 },
+  { type: 'rule',
+    selector: 'header + * > footer > a:before',
+    line: 345 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 346 },
+  { type: 'property',
+    key: 'font',
+    val: '80px/35px arial, verdana',
+    line: 346 },
+  { type: 'property',
+    key: 'text-align',
+    val: 'center',
+    line: 347 },
+  { type: 'property',
+    key: 'padding-bottom',
+    val: '60px',
+    line: 347 },
+  { type: 'end', line: 348 },
+  { type: 'rule',
+    selector: 'a[rel~="prev"]:before',
+    line: 349 },
+  { type: 'property',
+    key: 'content',
+    val: '"«"',
+    line: 349 },
+  { type: 'end', line: 349 },
+  { type: 'rule',
+    selector: 'a[rel~="next"]:before',
+    line: 350 },
+  { type: 'property',
+    key: 'content',
+    val: '"»"',
+    line: 350 },
+  { type: 'end', line: 350 },
+  { type: 'rule',
+    selector: 'a[href="#comments"]:before,\n          footer > a[rel~="bookmark"]:before',
+    line: 352 },
+  { type: 'property',
+    key: 'content',
+    val: '"#"',
+    line: 353 },
+  { type: 'property',
+    key: 'font-size',
+    val: '60px',
+    line: 354 },
+  { type: 'property',
+    key: 'line-height',
+    val: '52px',
+    line: 355 },
+  { type: 'end', line: 356 },
+  { type: 'rule',
+    selector: 'a[title^="Delete"]:before',
+    line: 357 },
+  { type: 'property',
+    key: 'content',
+    val: '"x"',
+    line: 357 },
+  { type: 'property',
+    key: 'font-size',
+    val: '60px',
+    line: 357 },
+  { type: 'end', line: 357 },
+  { type: 'comment',
+    text: '\n\n  *\n\n   * Page Footer\n\n   ',
+    line: 361 },
+  { type: 'rule', selector: 'body > footer', line: 363 },
+  { type: 'property',
+    key: 'position',
+    val: 'fixed',
+    line: 364 },
+  { type: 'property',
+    key: 'z-index',
+    val: '1',
+    line: 364 },
+  { type: 'property', key: 'top', val: '0', line: 364 },
+  { type: 'property',
+    key: 'right',
+    val: '50%',
+    line: 364 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '-355px',
+    line: 365 },
+  { type: 'end', line: 366 },
+  { type: 'rule',
+    selector: 'body > footer > small',
+    line: 368 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 369 },
+  { type: 'property', key: 'height', val: '0', line: 369 },
+  { type: 'property', key: 'width', val: '0', line: 370 },
+  { type: 'property',
+    key: 'overflow',
+    val: 'hidden',
+    line: 370 },
+  { type: 'end', line: 371 },
+  { type: 'rule',
+    selector: 'body > footer a, footer > form',
+    line: 372 },
+  { type: 'property',
+    key: 'position',
+    val: 'absolute',
+    line: 372 },
+  { type: 'property', key: 'top', val: '0', line: 372 },
+  { type: 'property', key: 'right', val: '0', line: 372 },
+  { type: 'end', line: 372 },
+  { type: 'rule',
+    selector: 'body > footer a',
+    line: 374 },
+  { type: 'property',
+    key: 'margin-top',
+    val: '4px',
+    line: 375 },
+  { type: 'property',
+    key: 'height',
+    val: '18px',
+    line: 375 },
+  { type: 'property',
+    key: 'width',
+    val: '18px',
+    line: 375 },
+  { type: 'property',
+    key: 'overflow',
+    val: 'hidden',
+    line: 375 },
+  { type: 'property',
+    key: '-webkit-transition',
+    val: '0.5s',
+    line: 376 },
+  { type: 'property',
+    key: '-moz-transition',
+    val: '0.5s',
+    line: 376 },
+  { type: 'property',
+    key: '-o-transition',
+    val: '0.5s',
+    line: 377 },
+  { type: 'property',
+    key: 'transition',
+    val: '0.5s',
+    line: 377 },
+  { type: 'end', line: 378 },
+  { type: 'rule',
+    selector: 'body > footer a:hover',
+    line: 379 },
+  { type: 'property',
+    key: '-webkit-transform',
+    val: 'rotate(360deg)',
+    line: 380 },
+  { type: 'property',
+    key: '-moz-transform',
+    val: 'rotate(360deg)',
+    line: 380 },
+  { type: 'property',
+    key: '-o-transform',
+    val: 'rotate(360deg)',
+    line: 381 },
+  { type: 'property',
+    key: 'transform',
+    val: 'rotate(360deg)',
+    line: 381 },
+  { type: 'end', line: 382 },
+  { type: 'rule',
+    selector: 'footer a[rel="alternate"]',
+    line: 384 },
+  { type: 'comment', text: '  new ', line: 384 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '0',
+    line: 384 },
+  { type: 'comment',
+    text: ' margin-right: 1px; margin-top: 4px; width: 17px; height: 17px;',
+    line: 384 },
+  { type: 'end', line: 384 },
+  { type: 'rule',
+    selector: 'footer a[rel="alternate"]:before',
+    line: 385 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 386 },
+  { type: 'property',
+    key: 'content',
+    val: 'url(/static/rss.svg)',
+    line: 387 },
+  { type: 'end', line: 388 },
+  { type: 'rule',
+    selector: 'footer a[rel="license"]',
+    line: 390 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '0px',
+    line: 390 },
+  { type: 'comment', text: '  new ', line: 390 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '30px',
+    line: 390 },
+  { type: 'end', line: 390 },
+  { type: 'rule',
+    selector: 'footer a[rel="license"]:before',
+    line: 391 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 392 },
+  { type: 'property',
+    key: 'content',
+    val: 'url(/static/by.png)',
+    line: 393 },
+  { type: 'end', line: 394 },
+  { type: 'rule',
+    selector: 'footer > a[href*="git"]',
+    line: 396 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '30px',
+    line: 396 },
+  { type: 'comment', text: '  new ', line: 396 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '60px',
+    line: 396 },
+  { type: 'end', line: 396 },
+  { type: 'rule',
+    selector: 'footer > a[href*="git"]:before',
+    line: 397 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 398 },
+  { type: 'property',
+    key: 'content',
+    val: 'url(/static/github.png)',
+    line: 399 },
+  { type: 'end', line: 400 },
+  { type: 'rule',
+    selector: 'footer > a[rel="search"]',
+    line: 402 },
+  { type: 'property',
+    key: 'margin-top',
+    val: '3px',
+    line: 403 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '60px',
+    line: 403 },
+  { type: 'comment', text: '  new ', line: 403 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '90px',
+    line: 403 },
+  { type: 'property',
+    key: 'text-decoration',
+    val: 'none !important',
+    line: 404 },
+  { type: 'end', line: 405 },
+  { type: 'rule',
+    selector: 'footer > a[rel="search"]:before',
+    line: 406 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 407 },
+  { type: 'property',
+    key: 'content',
+    val: '"?"',
+    line: 407 },
+  { type: 'property',
+    key: 'color',
+    val: '#fff',
+    line: 407 },
+  { type: 'property',
+    key: 'font-size',
+    val: '20px',
+    line: 408 },
+  { type: 'property',
+    key: 'line-height',
+    val: '1',
+    line: 408 },
+  { type: 'property',
+    key: 'font-size',
+    val: '18px',
+    line: 408 },
+  { type: 'property',
+    key: 'height',
+    val: '18px',
+    line: 409 },
+  { type: 'property',
+    key: 'text-align',
+    val: 'center',
+    line: 409 },
+  { type: 'end', line: 410 },
+  { type: 'rule',
+    selector: 'footer > a[rel="search"]:hover:before',
+    line: 411 },
+  { type: 'property',
+    key: 'color',
+    val: 'red',
+    line: 411 },
+  { type: 'end', line: 411 },
+  { type: 'rule', selector: 'footer > form', line: 413 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '60px',
+    line: 414 },
+  { type: 'property',
+    key: 'padding',
+    val: '25px 5px 5px',
+    line: 414 },
+  { type: 'comment', text: '  new ', line: 414 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '90px',
+    line: 414 },
+  { type: 'property',
+    key: 'z-index',
+    val: '-1',
+    line: 415 },
+  { type: 'property',
+    key: 'opacity',
+    val: '0',
+    line: 415 },
+  { type: 'property',
+    key: 'pointer-events',
+    val: 'none',
+    line: 415 },
+  { type: 'property',
+    key: '-webkit-transition',
+    val: '0.4s',
+    line: 416 },
+  { type: 'property',
+    key: '-moz-transition',
+    val: '0.4s',
+    line: 416 },
+  { type: 'property',
+    key: '-o-transition',
+    val: '0.4s',
+    line: 417 },
+  { type: 'property',
+    key: 'transition',
+    val: '0.4s',
+    line: 417 },
+  { type: 'property',
+    key: 'border',
+    val: 'solid 1px',
+    line: 418 },
+  { type: 'end', line: 419 },
+  { type: 'rule',
+    selector: 'footer > form:target',
+    line: 420 },
+  { type: 'property',
+    key: 'opacity',
+    val: '1',
+    line: 420 },
+  { type: 'property',
+    key: 'pointer-events',
+    val: 'auto',
+    line: 420 },
+  { type: 'end', line: 420 },
+  { type: 'rule',
+    selector: 'footer > form:before',
+    line: 421 },
+  { type: 'property',
+    key: 'display',
+    val: 'block',
+    line: 422 },
+  { type: 'property',
+    key: 'position',
+    val: 'absolute',
+    line: 422 },
+  { type: 'property', key: 'top', val: '0', line: 422 },
+  { type: 'property',
+    key: 'content',
+    val: '""',
+    line: 422 },
+  { type: 'property',
+    key: 'background',
+    val: 'rgba(255, 255, 255, 0.3)',
+    line: 423 },
+  { type: 'property',
+    key: 'height',
+    val: '20px',
+    line: 423 },
+  { type: 'property',
+    key: 'width',
+    val: '15px',
+    line: 423 },
+  { type: 'property',
+    key: 'border-right',
+    val: 'rgba(170, 0, 0, 0.3) solid 15px',
+    line: 424 },
+  { type: 'property',
+    key: 'background',
+    val: 'rgba(255, 255, 255, 0.2)',
+    line: 425 },
+  { type: 'property',
+    key: 'border-right',
+    val: 'none',
+    line: 425 },
+  { type: 'property',
+    key: 'width',
+    val: '20px',
+    line: 425 },
+  { type: 'end', line: 426 },
+  { type: 'rule',
+    selector: 'footer input[type="search"]',
+    line: 427 },
+  { type: 'property',
+    key: 'background',
+    val: '#fff',
+    line: 428 },
+  { type: 'property',
+    key: 'border',
+    val: 'black solid 1px',
+    line: 428 },
+  { type: 'property',
+    key: '-webkit-appearance',
+    val: 'none',
+    line: 428 },
+  { type: 'property',
+    key: 'height',
+    val: '20px',
+    line: 429 },
+  { type: 'property',
+    key: 'width',
+    val: '140px',
+    line: 429 },
+  { type: 'property',
+    key: 'float',
+    val: 'left',
+    line: 429 },
+  { type: 'property',
+    key: 'padding',
+    val: '2px',
+    line: 429 },
+  { type: 'property',
+    key: 'font-size',
+    val: '12px',
+    line: 430 },
+  { type: 'property',
+    key: 'line-height',
+    val: '1',
+    line: 430 },
+  { type: 'property',
+    key: 'border',
+    val: 'none',
+    line: 430 },
+  { type: 'property',
+    key: 'background',
+    val: 'rgba(255, 255, 255, 0.9)',
+    line: 431 },
+  { type: 'end', line: 432 },
+  { type: 'rule',
+    selector: 'footer input[type="submit"]',
+    line: 433 },
+  { type: 'property',
+    key: 'height',
+    val: '20px',
+    line: 434 },
+  { type: 'property',
+    key: 'padding',
+    val: '0',
+    line: 434 },
+  { type: 'property',
+    key: 'position',
+    val: 'absolute',
+    line: 434 },
+  { type: 'property', key: 'top', val: '2px', line: 435 },
+  { type: 'property',
+    key: 'background',
+    val: 'transparent',
+    line: 435 },
+  { type: 'property',
+    key: 'border',
+    val: 'none',
+    line: 435 },
+  { type: 'property',
+    key: 'text-transform',
+    val: 'lowercase',
+    line: 436 },
+  { type: 'property',
+    key: 'cursor',
+    val: 'pointer',
+    line: 436 },
+  { type: 'end', line: 437 },
+  { type: 'comment',
+    text: '\n\n*\n\n * Color Scheme\n\n ',
+    line: 441 },
+  { type: 'at',
+    name: '@var',
+    params: '$page-color #8191a4',
+    line: 443 },
+  { type: 'at',
+    name: '@var',
+    params: '$chrome-color #8191a4',
+    line: 444 },
+  { type: 'at',
+    name: '@var',
+    params: '$text-color #000',
+    line: 445 },
+  { type: 'at',
+    name: '@var',
+    params: '$special-color #fff',
+    line: 446 },
+  { type: 'at',
+    name: '@var',
+    params: '$highlight-color black',
+    line: 447 },
+  { type: 'rule', selector: 'html', line: 449 },
+  { type: 'property',
+    key: 'background',
+    val: '$page-color fixed',
+    line: 450 },
+  { type: 'property',
+    key: 'color',
+    val: '$text-color',
+    line: 451 },
+  { type: 'property',
+    key: 'background-image',
+    val: '-webkit-gradient(\n    linear, 0 0, 0 100%, color-stop(0, rgba(0, 0, 0, 0.15)),\n    color-stop(0.2, transparent), color-stop(0.8, transparent),\n    color-stop(1, rgba(0, 0, 0, 0.15))\n  )',
+    line: 456 },
+  { type: 'property',
+    key: 'background-image',
+    val: '-moz-linear-gradient(\n    -90deg, rgba(0, 0, 0, 0.15) 0%,\n    transparent 20%, transparent 80%,\n    rgba(0, 0, 0, 0.15) 100%\n  )',
+    line: 461 },
+  { type: 'end', line: 462 },
+  { type: 'rule',
+    selector: 'body > header, footer > form,\nhead, a[href][rel~=home]',
+    line: 465 },
+  { type: 'property',
+    key: 'background',
+    val: '$chrome-color',
+    line: 466 },
+  { type: 'property',
+    key: '-webkit-box-shadow',
+    val: 'rgba(0, 0, 0, 0.4) 0 0 12px',
+    line: 467 },
+  { type: 'property',
+    key: '-moz-box-shadow',
+    val: 'rgba(0, 0, 0, 0.4) 0 0 12px',
+    line: 468 },
+  { type: 'property',
+    key: 'box-shadow',
+    val: 'rgba(0, 0, 0, 0.4) 0 0 12px',
+    line: 469 },
+  { type: 'end', line: 470 },
+  { type: 'rule', selector: 'body > header', line: 472 },
+  { type: 'property',
+    key: 'background-image',
+    val: '-webkit-gradient(\n    linear, 0 0, 0 100%, color-stop(0, rgba(0, 0, 0, 0.15)),\n    color-stop(0.5, transparent)\n  )',
+    line: 476 },
+  { type: 'property',
+    key: 'background-image',
+    val: '-moz-linear-gradient(\n    -90deg, rgba(0, 0, 0, 0.15) 0%,\n    transparent 50%\n  )',
+    line: 480 },
+  { type: 'end', line: 481 },
+  { type: 'rule', selector: 'head', line: 482 },
+  { type: 'property',
+    key: 'background-image',
+    val: '-webkit-gradient(\n    linear, 0 0, 0 100%, color-stop(0.5, transparent),\n    color-stop(1, rgba(0, 0, 0, 0.15))\n  )',
+    line: 486 },
+  { type: 'property',
+    key: 'background-image',
+    val: '-moz-linear-gradient(\n    -90deg, transparent 50%,\n    rgba(0, 0, 0, 0.15) 100%\n  )',
+    line: 490 },
+  { type: 'end', line: 491 },
+  { type: 'rule', selector: 'body', line: 492 },
+  { type: 'comment',
+    text: '\n  text-shadow:\n\n    rgba(0, 0, 0, 0.025) 0 -1px 0,\n\n    rgba(255, 255, 255, 0.2) 0 1px 0;',
+    line: 495 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: '#718194 0 -1px 0, #91a1b4 0 1px 0',
+    line: 496 },
+  { type: 'end', line: 497 },
+  { type: 'rule',
+    selector: 'pre, blockquote, figure, textarea, input',
+    line: 499 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'none',
+    line: 500 },
+  { type: 'property',
+    key: 'background',
+    val: 'rgba(0, 0, 0, 0.04)',
+    line: 501 },
+  { type: 'end', line: 502 },
+  { type: 'rule',
+    selector: 'a[href][rel~="home"]',
+    line: 504 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: '$special-color 1px 1px',
+    line: 504 },
+  { type: 'end', line: 504 },
+  { type: 'rule', selector: 'a[rel~="home"]', line: 505 },
+  { type: 'property',
+    key: 'border-color',
+    val: '$special-color',
+    line: 505 },
+  { type: 'end', line: 505 },
+  { type: 'rule',
+    selector: 'header + * h1, h2, h3, h4, h5, h6, dt,\nnav a[href]:hover,\na[href][rel~="tag"],\na[href][rel~="self"],\na[href][rel~="directory"],\nblockquote:before',
+    line: 512 },
+  { type: 'property',
+    key: 'color',
+    val: '$text-color',
+    line: 512 },
+  { type: 'end', line: 512 },
+  { type: 'rule',
+    selector: 'a[rel~="home"]:hover, footer > a:hover',
+    line: 514 },
+  { type: 'property',
+    key: 'border-color',
+    val: '$highlight-color',
+    line: 514 },
+  { type: 'end', line: 514 },
+  { type: 'rule',
+    selector: 'label:hover, h3 > a[href][rel~="related"]',
+    line: 515 },
+  { type: 'property',
+    key: 'color',
+    val: '$highlight-color',
+    line: 515 },
+  { type: 'end', line: 515 },
+  { type: 'rule',
+    selector: 'a:link, form[role="button"] > input',
+    line: 517 },
+  { type: 'property',
+    key: 'color',
+    val: '$special-color',
+    line: 517 },
+  { type: 'end', line: 517 },
+  { type: 'rule', selector: 'a:visited', line: 518 },
+  { type: 'property',
+    key: 'color',
+    val: '$special-color',
+    line: 518 },
+  { type: 'end', line: 518 },
+  { type: 'rule',
+    selector: 'nav a[href],\nheader + * > footer > a[href],\nfooter input[type="submit"]',
+    line: 522 },
+  { type: 'property',
+    key: 'color',
+    val: '$special-color',
+    line: 522 },
+  { type: 'end', line: 522 },
+  { type: 'rule',
+    selector: 'label, label ~ input[type="submit"], h1 + time',
+    line: 524 },
+  { type: 'property',
+    key: 'color',
+    val: '$special-color',
+    line: 524 },
+  { type: 'end', line: 524 },
+  { type: 'rule',
+    selector: 'img, label > input, textarea',
+    line: 525 },
+  { type: 'property',
+    key: 'border-color',
+    val: '#333',
+    line: 525 },
+  { type: 'end', line: 525 },
+  { type: 'rule',
+    selector: 'body > header,\nhead, footer > form',
+    line: 528 },
+  { type: 'property',
+    key: 'border-color',
+    val: '#29261f',
+    line: 528 },
+  { type: 'end', line: 528 },
+  { type: 'rule',
+    selector: 'input, textarea',
+    line: 530 },
+  { type: 'property',
+    key: 'color',
+    val: '$text-color',
+    line: 530 },
+  { type: 'end', line: 530 },
+  { type: 'rule',
+    selector: 'a[href][rel~="home"]',
+    line: 532 },
+  { type: 'property',
+    key: 'color',
+    val: '$chrome-color',
+    line: 532 },
+  { type: 'end', line: 532 },
+  { type: 'rule',
+    selector: 'hr, blockquote:before',
+    line: 534 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'rgba(255, 255, 255, 0.4) 1px 1px 0',
+    line: 534 },
+  { type: 'end', line: 534 },
+  { type: 'rule',
+    selector: 'body > header + * > footer > a[href]:before',
+    line: 536 },
+  { type: 'property',
+    key: 'color',
+    val: '#333',
+    line: 537 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'rgba(255, 255, 255, 0.75) 1px 1px 1px',
+    line: 538 },
+  { type: 'end', line: 539 },
+  { type: 'comment',
+    text: '\n\n\n testing ----------------- ',
+    line: 542 },
+  { type: 'comment',
+    text: '\npre { background: rgba(255, 255, 255, 0.7); box-shadow: #333 0px 0px 6px; }',
+    line: 543 },
+  { type: 'end', line: 545 },
+  { type: 'comment',
+    text: '\n\n*\n\n * Media Queries\n\n ',
+    line: 549 },
+  { type: 'nested_at',
+    name: '@media',
+    params: 'print',
+    line: 551 },
+  { type: 'rule', selector: 'html', line: 552 },
+  { type: 'property',
+    key: 'width',
+    val: 'auto',
+    line: 552 },
+  { type: 'property',
+    key: 'padding',
+    val: '0',
+    line: 552 },
+  { type: 'end', line: 552 },
+  { type: 'rule', selector: 'body', line: 553 },
+  { type: 'property', key: 'margin', val: '0', line: 553 },
+  { type: 'property',
+    key: 'padding',
+    val: '0',
+    line: 553 },
+  { type: 'end', line: 553 },
+  { type: 'rule',
+    selector: 'body:before, body:after, body > header,\n  footer, h1 + time, form',
+    line: 555 },
+  { type: 'property',
+    key: 'display',
+    val: 'none',
+    line: 555 },
+  { type: 'end', line: 555 },
+  { type: 'rule',
+    selector: 'h1, h2, h3, h4, h5, h6',
+    line: 556 },
+  { type: 'property',
+    key: 'page-break-after',
+    val: 'avoid',
+    line: 556 },
+  { type: 'end', line: 556 },
+  { type: 'rule',
+    selector: 'pre, blockquote, figure, aside[role="note"]',
+    line: 557 },
+  { type: 'property',
+    key: 'page-break-inside',
+    val: 'avoid',
+    line: 557 },
+  { type: 'end', line: 557 },
+  { type: 'end', line: 558 },
+  { type: 'comment',
+    text: '\n\n*\n\n * Adjustment\n\n ',
+    line: 562 },
+  { type: 'nested_at',
+    name: '@media',
+    params: '(max-width: 840px)',
+    line: 564 },
+  { type: 'comment',
+    text: '  change design into a fluid layout ',
+    line: 564 },
+  { type: 'nested_at',
+    name: '@viewport',
+    params: '',
+    line: 565 },
+  { type: 'property',
+    key: 'width',
+    val: 'device-width',
+    line: 565 },
+  { type: 'property', key: 'zoom', val: '1.0', line: 565 },
+  { type: 'comment',
+    text: ' user-zoom: fixed;',
+    line: 565 },
+  { type: 'end', line: 565 },
+  { type: 'rule',
+    selector: 'html, body > header > *',
+    line: 566 },
+  { type: 'property',
+    key: 'width',
+    val: 'auto',
+    line: 566 },
+  { type: 'end', line: 566 },
+  { type: 'rule',
+    selector: 'header + * > footer',
+    line: 567 },
+  { type: 'property',
+    key: 'left',
+    val: 'auto',
+    line: 567 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '0',
+    line: 567 },
+  { type: 'property', key: 'right', val: '0', line: 567 },
+  { type: 'end', line: 567 },
+  { type: 'rule', selector: 'h1 + time', line: 568 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '0',
+    line: 568 },
+  { type: 'property',
+    key: 'right',
+    val: '100px',
+    line: 568 },
+  { type: 'end', line: 568 },
+  { type: 'rule', selector: 'body > footer', line: 569 },
+  { type: 'property',
+    key: 'right',
+    val: '60px',
+    line: 569 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '5px',
+    line: 569 },
+  { type: 'end', line: 569 },
+  { type: 'end', line: 570 },
+  { type: 'nested_at',
+    name: '@media',
+    params: '(max-width: 760px)',
+    line: 572 },
+  { type: 'rule',
+    selector: 'nav li:nth-child(3), form > p',
+    line: 573 },
+  { type: 'property',
+    key: 'display',
+    val: 'none',
+    line: 573 },
+  { type: 'end', line: 573 },
+  { type: 'rule', selector: 'article form', line: 574 },
+  { type: 'property',
+    key: 'overflow',
+    val: 'hidden',
+    line: 574 },
+  { type: 'end', line: 574 },
+  { type: 'rule', selector: 'label', line: 575 },
+  { type: 'property',
+    key: 'font-size',
+    val: '9px',
+    line: 575 },
+  { type: 'property',
+    key: 'border',
+    val: 'none',
+    line: 575 },
+  { type: 'property',
+    key: 'padding',
+    val: '0',
+    line: 575 },
+  { type: 'end', line: 575 },
+  { type: 'end', line: 576 },
+  { type: 'nested_at',
+    name: '@media',
+    params: '(max-width: 690px)',
+    line: 578 },
+  { type: 'rule', selector: 'label > input', line: 579 },
+  { type: 'property',
+    key: 'width',
+    val: '50%',
+    line: 579 },
+  { type: 'end', line: 579 },
+  { type: 'end', line: 580 },
+  { type: 'comment',
+    text: '\n\n at this point, its safe to assume the person is probably using\n\n * a mobile device that doesnt support position: fixed\n\n ',
+    line: 584 },
+  { type: 'nested_at',
+    name: '@media',
+    params: '(max-width: 600px)',
+    line: 585 },
+  { type: 'rule', selector: 'html', line: 586 },
+  { type: 'property',
+    key: 'overflow',
+    val: 'auto',
+    line: 586 },
+  { type: 'property',
+    key: 'padding-bottom',
+    val: '40px',
+    line: 586 },
+  { type: 'property',
+    key: 'background-image',
+    val: 'none',
+    line: 586 },
+  { type: 'end', line: 586 },
+  { type: 'rule', selector: 'body', line: 587 },
+  { type: 'property', key: 'margin', val: '0', line: 588 },
+  { type: 'property',
+    key: 'padding',
+    val: '20px',
+    line: 588 },
+  { type: 'property',
+    key: 'position',
+    val: 'relative',
+    line: 588 },
+  { type: 'property',
+    key: 'border',
+    val: 'none',
+    line: 589 },
+  { type: 'property',
+    key: 'overflow',
+    val: 'hidden',
+    line: 589 },
+  { type: 'end', line: 590 },
+  { type: 'rule', selector: 'a[rel~=home]', line: 591 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '10px',
+    line: 591 },
+  { type: 'end', line: 591 },
+  { type: 'rule', selector: 'header + * h1', line: 592 },
+  { type: 'property',
+    key: 'padding-top',
+    val: '20px',
+    line: 592 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '0',
+    line: 592 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '0',
+    line: 592 },
+  { type: 'end', line: 592 },
+  { type: 'rule', selector: 'body > footer', line: 593 },
+  { type: 'property',
+    key: 'right',
+    val: '5px',
+    line: 593 },
+  { type: 'end', line: 593 },
+  { type: 'rule',
+    selector: 'body > header + * > footer',
+    line: 594 },
+  { type: 'property',
+    key: 'height',
+    val: 'auto',
+    line: 595 },
+  { type: 'property',
+    key: 'width',
+    val: 'auto',
+    line: 595 },
+  { type: 'property', key: 'top', val: '30px', line: 596 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 10px 0 0',
+    line: 596 },
+  { type: 'end', line: 597 },
+  { type: 'rule',
+    selector: 'body > header + * > footer > a[href]',
+    line: 598 },
+  { type: 'property',
+    key: 'position',
+    val: 'static',
+    line: 599 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'none',
+    line: 599 },
+  { type: 'property',
+    key: 'float',
+    val: 'left',
+    line: 599 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 0 0 20px',
+    line: 600 },
+  { type: 'property',
+    key: 'width',
+    val: 'auto',
+    line: 600 },
+  { type: 'property',
+    key: 'height',
+    val: 'auto',
+    line: 600 },
+  { type: 'property',
+    key: 'font-size',
+    val: '11px',
+    line: 600 },
+  { type: 'end', line: 601 },
+  { type: 'rule',
+    selector: 'body > header + * > footer > a:before',
+    line: 602 },
+  { type: 'property',
+    key: 'display',
+    val: 'none',
+    line: 602 },
+  { type: 'end', line: 602 },
+  { type: 'rule', selector: 'nav ul', line: 603 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '60px',
+    line: 603 },
+  { type: 'end', line: 603 },
+  { type: 'rule', selector: 'head', line: 604 },
+  { type: 'property',
+    key: 'display',
+    val: 'none',
+    line: 604 },
+  { type: 'end', line: 604 },
+  { type: 'rule',
+    selector: 'body > header, body > footer,\n  body > header + * > footer',
+    line: 606 },
+  { type: 'property',
+    key: 'position',
+    val: 'absolute',
+    line: 606 },
+  { type: 'end', line: 606 },
+  { type: 'end', line: 607 },
+  { type: 'nested_at',
+    name: '@media',
+    params: '(max-width: 460px)',
+    line: 609 },
+  { type: 'rule',
+    selector: 'nav li:nth-child(2)',
+    line: 610 },
+  { type: 'property',
+    key: 'display',
+    val: 'none',
+    line: 610 },
+  { type: 'end', line: 610 },
+  { type: 'rule', selector: 'footer > small', line: 611 },
+  { type: 'property',
+    key: 'letter-spacing',
+    val: '0',
+    line: 611 },
+  { type: 'end', line: 611 },
+  { type: 'rule', selector: 'label > input', line: 612 },
+  { type: 'property',
+    key: 'width',
+    val: '35%',
+    line: 612 },
+  { type: 'end', line: 612 },
+  { type: 'end', line: 613 },
+  { type: 'nested_at',
+    name: '@media',
+    params: '(max-width: 320px)',
+    line: 615 },
+  { type: 'rule', selector: 'footer > small', line: 616 },
+  { type: 'property',
+    key: 'font-size',
+    val: '8px',
+    line: 616 },
+  { type: 'end', line: 616 },
+  { type: 'rule',
+    selector: 'nav li:last-child',
+    line: 617 },
+  { type: 'property',
+    key: 'display',
+    val: 'none',
+    line: 617 },
+  { type: 'end', line: 617 },
+  { type: 'end', line: 618 },
+  { type: 'comment',
+    text: '\n\n*\n\n * Work In Progress\n\n ',
+    line: 622 },
+  { type: 'comment',
+    text: '\n\n squeeze: could increase the total html width\n\n   to compensate for larger margins ',
+    line: 625 },
+  { type: 'rule', selector: 'body', line: 626 },
+  { type: 'property',
+    key: 'margin',
+    val: '0 100px 0 80px',
+    line: 626 },
+  { type: 'end', line: 626 },
+  { type: 'rule', selector: 'body > footer', line: 627 },
+  { type: 'property',
+    key: 'margin-right',
+    val: '-320px',
+    line: 627 },
+  { type: 'end', line: 627 },
+  { type: 'rule', selector: 'a[rel~="home"]', line: 628 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '21px',
+    line: 628 },
+  { type: 'end', line: 628 },
+  { type: 'rule', selector: 'nav > ul', line: 629 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '80px',
+    line: 629 },
+  { type: 'end', line: 629 },
+  { type: 'rule',
+    selector: 'header + * > footer',
+    line: 630 },
+  { type: 'property',
+    key: 'margin-left',
+    val: '340px',
+    line: 630 },
+  { type: 'end', line: 630 },
+  { type: 'rule',
+    selector: 'article > footer > ul',
+    line: 632 },
+  { type: 'property',
+    key: 'list-style',
+    val: 'none',
+    line: 633 },
+  { type: 'property', key: 'margin', val: '0', line: 633 },
+  { type: 'property',
+    key: 'padding',
+    val: '2px',
+    line: 633 },
+  { type: 'property',
+    key: 'margin-top',
+    val: '140px',
+    line: 634 },
+  { type: 'property',
+    key: 'text-align',
+    val: 'right',
+    line: 634 },
+  { type: 'property',
+    key: 'border-top',
+    val: '#333 solid 1px',
+    line: 635 },
+  { type: 'property',
+    key: 'padding-top',
+    val: '15px',
+    line: 636 },
+  { type: 'end', line: 637 },
+  { type: 'rule',
+    selector: 'article > footer > ul > li',
+    line: 638 },
+  { type: 'property', key: 'margin', val: '0', line: 639 },
+  { type: 'property',
+    key: 'padding',
+    val: '0',
+    line: 639 },
+  { type: 'property',
+    key: 'text-shadowz',
+    val: '#333 1px 1px 0px',
+    line: 639 },
+  { type: 'property',
+    key: 'font-family',
+    val: '"Euphemia UCAS", "Trebuchet MS", sans-serif',
+    line: 640 },
+  { type: 'property',
+    key: 'font-size',
+    val: '12px',
+    line: 640 },
+  { type: 'end', line: 641 },
+  { type: 'comment',
+    text: '\narticle > footer > ul > li:before {\n\n  content: "\\2605"; content: "•"; font-family: verdana;\n\n  float: left; text-shadow: none;\n\n}',
+    line: 645 },
+  { type: 'rule',
+    selector: 'article > footer > ul > li > a:hover',
+    line: 648 },
+  { type: 'property',
+    key: 'text-decoration',
+    val: 'none',
+    line: 648 },
+  { type: 'end', line: 648 },
+  { type: 'rule',
+    selector: 'article > footer > ul > li > a:hover',
+    line: 649 },
+  { type: 'property',
+    key: 'color',
+    val: '$text-color',
+    line: 649 },
+  { type: 'end', line: 649 },
+  { type: 'rule',
+    selector: 'article > footer > ul > li > a[rel]:hover',
+    line: 650 },
+  { type: 'property',
+    key: 'color',
+    val: '$special-color',
+    line: 650 },
+  { type: 'end', line: 650 },
+  { type: 'rule',
+    selector: 'article > footer > ul > li > a:before',
+    line: 651 },
+  { type: 'property',
+    key: 'content',
+    val: '"•"',
+    line: 652 },
+  { type: 'property',
+    key: 'color',
+    val: '$text-color',
+    line: 652 },
+  { type: 'property',
+    key: 'font-family',
+    val: 'verdana',
+    line: 652 },
+  { type: 'property',
+    key: 'float',
+    val: 'left',
+    line: 653 },
+  { type: 'property',
+    key: 'text-shadow',
+    val: 'none',
+    line: 653 },
+  { type: 'end', line: 654 },
+  { type: 'nested_at',
+    name: '@trait',
+    params: 'test',
+    line: 656 },
+  { type: 'property',
+    key: 'hi',
+    val: '"again"',
+    line: 658 },
+  { type: 'end', line: 658 },
+  { type: 'nested_at',
+    name: '@trait',
+    params: 'test2($t)',
+    line: 660 },
+  { type: 'property', key: 'hey', val: '$t', line: 661 },
+  { type: 'end', line: 662 },
+  { type: 'rule',
+    selector: 'article > footer > ul > li > a[rel]:before',
+    line: 664 },
+  { type: 'property',
+    key: 'content',
+    val: '"\\2605"',
+    line: 665 },
+  { type: 'rule', selector: '& > test', line: 666 },
+  { type: 'property',
+    key: 'hello',
+    val: '"world"',
+    line: 667 },
+  { type: 'rule', selector: '& > test2', line: 668 },
+  { type: 'property',
+    key: 'another',
+    val: '"one"',
+    line: 669 },
+  { type: 'end', line: 670 },
+  { type: 'end', line: 671 },
+  { type: 'at',
+    name: '@mixin',
+    params: 'test',
+    line: 672 },
+  { type: 'at',
+    name: '@mixin',
+    params: 'test2("uhoh")',
+    line: 673 },
+  { type: 'end', line: 674 } ]
+
+
+
+
+--------------------------------------------------------------------------------
+
+
+
+
+/**
+ * Dilated (https://github.com/chjj/dilated) Copyright (c) 2011, Christopher Jeffrey.
+ */
+
+
+/**
+ * HTML5 Elements
+ */
+
+header,
+footer,
+nav,
+section,
+aside,
+article,
+hgroup,
+figure,
+figcaption {
+  display: block;
+}
+
+/**
+ * Basic Elements
+ */
+
+::selection,
+input::selection,
+textarea::selection {
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: none;
+}
+::-moz-selection,
+input::-moz-selection,
+textarea::-moz-selection {
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: none;
+}
+
+/**
+ * Text Level
+ */
+
+a,
+h1 > a:hover {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+abbr {
+  border: none;
+  text-decoration: none;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: rgba(0, 0, 0, 0.15) solid 1px;
+}
+p > code,
+samp {
+  background: rgba(255, 255, 255, 0.3);
+  border: rgba(255, 255, 255, 0.3) solid 1px;
+  text-shadow: none;
+  font: 14/20px monospace;
+}
+mark {
+  background: rgba(255, 255, 255, 0.3);
+}
+small {
+  font-size: 11px;
+}
+
+/**
+ * Content Flow
+ */
+
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+blockquote,
+pre,
+hr,
+form {
+  margin: 0 0 20px;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+/**
+ * Content Blocks
+ */
+
+figure,
+blockquote,
+pre {
+  padding: 20px;
+}
+figure > *,
+blockquote > *,
+pre > * {
+  padding: 0;
+  background: transparent !important;
+}
+figcaption {
+  margin: 20px 20px 0 20px;
+}
+blockquote {
+  margin-left: 45px;
+  padding-bottom: 1px;
+  margin-top: -1px;
+}
+blockquote:before {
+  content: "“";
+  float: left;
+  margin: -30px 0 0 -65px;
+  font: 90px/1 serif;
+}
+blockquote > cite {
+  display: block;
+  margin: 20px 40px;
+  font-style: italic;
+}
+pre {
+  white-space: pre-wrap;
+}
+pre > code {
+  font-size: 11px;
+}
+pre > code[title]:before {
+  float: right;
+  margin: -10px -5px 0 0;
+  content: "[" attr(title) "]";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt {
+  font: normal 60px/20px serif;
+  letter-spacing: 0.05em;
+  padding: 0;
+  margin: 0 0 20px;
+}
+h1 {
+  line-height: 60px;
+}
+h2 {
+  font-size: 26px;
+}
+h3,
+dt {
+  font-size: 22px;
+}
+h4 {
+  font-size: 18px;
+}
+h5,
+h6 {
+  font-size: 16px;
+}
+hr {
+  height: auto;
+  border: none;
+  font: italic 60px/50px serif;
+  text-align: center;
+  cursor: default;
+  margin: 0 auto 10px;
+  width: 30px;
+  height: 60px;
+  -webkit-transform: rotate(71deg);
+  -moz-transform: rotate(71deg);
+  -o-transform: rotate(71deg);
+  transform: rotate(71deg);
+}
+hr:before {
+  content: "§";
+}
+img {
+  display: block;
+  outline: none;
+  border: solid 1px;
+  opacity: 0.6;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+:hover > img,
+img:hover {
+  opacity: 1;
+}
+p > img {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+p:nth-of-type(even) > img {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+/**
+ * Form Controls
+ */
+
+input,
+textarea {
+  display: block;
+  height: 20px;
+  font: inherit;
+  text-shadow: inherit;
+  margin: 0;
+  padding: 0 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * get rid of google chrome outline
+ */
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+input[type="checkbox"] {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+input[type="submit"] {
+  width: auto;
+  background: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+/**
+ * Paragraphs
+ */
+
+p {
+  font: 12px/20px verdana;
+}
+body > article > header + p,
+h1 + p {
+  min-height: 40px;
+}
+body > article > header + p:first-line,
+h1 + p:first-line {
+  font-weight: bold;
+}
+blockquote > p:first-child:first-letter,
+body > article > header + p:first-letter,
+h1 + p:first-letter,
+aside[role="note"]:first-letter,
+form > p:first-letter {
+  float: left;
+  font: 40px/28px serif;
+  padding: 8px 3px 0 0;
+  text-shadow: rgba(255, 255, 255, 0.3) 1px 1px 1px;
+}
+
+/**
+ * Lists
+ */
+
+ol,
+ul {
+  padding-left: 20px;
+}
+li {
+  margin: 0 0 10px;
+  padding: 0;
+}
+li:nth-child(odd):last-child {
+  padding-bottom: 10px;
+}
+dd {
+  margin-left: 20px;
+}
+
+/**
+ * simple rules for browsers that dont support css3 media queries
+ */
+
+html {
+  max-width: 720px;
+  margin: 0 auto;
+  behavior: url(/shim.htc);
+}
+textarea {
+  height: 200px;
+  width: 100%;
+}
+
+/**
+ * Layout Design
+ */
+
+@media only all {
+  html,
+  body > header > * {
+    width: 840px;
+    margin: 0 auto;
+  }
+  html {
+    font: 12px/20px verdana, sans-serif;
+    overflow-y: scroll;
+    height: 100%;
+    padding-bottom: 65px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: none;
+  }
+  head {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 9px;
+    border-top: solid 1px;
+  }
+  head > * {
+    display: none;
+  }
+  body {
+    margin: 0 60px;
+    min-height: 100%;
+    padding: 20px;
+  }
+
+  /**
+   * Page Header
+   */
+
+  body > header {
+    height: 24px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: solid 1px;
+  }
+
+  /**
+   * Header Heading
+   */
+
+  a[rel~="home"] {
+    position: absolute;
+    z-index: 1;
+    height: 35px;
+    width: 35px;
+    padding: 0;
+    letter-spacing: 0;
+    margin: 8px 0 0 11px;
+    font: 90px/30px verdana;
+    overflow: hidden;
+    border: solid 1px;
+  }
+  a[rel~="home"]:before {
+    content: "ε";
+    display: block;
+    margin-left: 3px;
+    padding-bottom: 30px;
+
+    /**
+     * testing
+     */
+
+    content: "d";
+    font-size: 90px;
+    font-family: serif;
+  }
+
+  /**
+   * make the logo animate every 10 seconds
+   */
+
+  @-webkit-keyframes heartbeat {
+    4% {
+      text-shadow: #fff 1px 1px 20px;
+    }
+    0%,
+    9%,
+    100% {
+      text-shadow: #fff 1px 1px;
+    }
+  }
+
+  a[rel~=home] {
+    -webkit-animation: heartbeat 11s linear 0s infinite;
+  }
+
+  /**
+   * Header Nav
+   */
+
+  nav > ul {
+    list-style: none;
+    margin: 0 0 0 60px;
+    padding: 0;
+    margin-leftz: 70px;
+  }
+
+  /**
+   * === testing margin ===
+   */
+
+  nav li {
+    margin: 6px 20px 0 5px;
+    float: left;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+  }
+
+  /**
+   * hack to fix look
+   */
+
+  nav a[rel~="directory"],
+  nav a[rel~="tag"] {
+    float: left;
+    margin-top: 1px;
+
+    /**
+     * padding-top: 1px; display: block;
+     */
+
+  }
+
+  /**
+   * bullet
+   */
+
+  nav li:first-child::before {
+    content: "•";
+    float: right;
+    margin: 0 15px;
+    font-size: 13px;
+    line-height: 14px;
+  }
+  nav li:first-child + li {
+    margin-left: -22px;
+  }
+
+  /**
+   * Content Section
+   */
+
+  body:before,
+  body:after {
+    content: "\20";
+    display: block;
+    margin-bottom: 19px;
+  }
+
+  /**
+   * Content Header
+   */
+
+  header + * h1 {
+    font: 60px/60px arial;
+    letter-spacing: 0;
+    word-wrap: break-word;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px 0;
+  }
+  header + * h1 > a[href] {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  h1 + time {
+    display: block;
+    font: 14px/20px serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  time > a[href] {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  time sup {
+    font-size: 70%;
+    line-height: 0;
+    text-transform: none;
+  }
+
+  /**
+   * Aside Boxes
+   */
+
+  aside[role="note"] {
+    width: 160px;
+    padding: 0px;
+    margin: 0 0 20px 20px;
+    float: right;
+    font-size: 10px;
+  }
+  aside[role="note"] a {
+    border-bottom: dotted 1px;
+    text-decoration: none !important;
+  }
+
+  /**
+   * Form Controls
+   */
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-left: rgba(0, 0, 0, 0.075) solid 25px;
+    padding-left: 15px;
+  }
+  label > input,
+  textarea {
+    margin-top: 2px;
+    border: solid 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 2px inset;
+    -moz-box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 2px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 2px inset;
+  }
+  textarea {
+    width: 100%;
+    height: 188px;
+    padding: 5px;
+    overflow-x: hidden;
+    resize: vertical;
+    margin: 10px 0 8px;
+  }
+  h1 ~ form textarea {
+    height: 400px;
+    font-size: 11px;
+    font-family: monospace;
+  }
+  label > input {
+    width: 70%;
+    float: right;
+  }
+  label > input[type="checkbox"] {
+    float: none;
+    margin-left: -32px;
+    margin-top: -5px;
+    margin-right: 5px;
+  }
+  label ~ input[type="submit"] {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    border: none;
+    margin-top: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    float: right;
+    margin-left: 30px;
+  }
+  h1 + form[action*="admin"] {
+    float: left;
+  }
+  input[type="password"] {
+    width: 200px;
+    display: block;
+    float: none;
+  }
+  form[role="button"],
+  form[role="button"] > input {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+  }
+  form[role="button"] > input:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  /**
+   * Browse List
+   */
+
+  section > ol > li {
+    font-size: 13px;
+  }
+  section > ol time {
+    display: block;
+  }
+
+  /**
+   * Content Footer
+   */
+
+  header + * > footer {
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    left: 50%;
+    margin-left: 360px;
+    width: 60px;
+    height: 120px;
+  }
+  header + * > footer > a {
+    display: block;
+    overflow: hidden;
+    width: 60px;
+    height: 50px;
+    text-shadow: rgba(255, 255, 255, 0.2) 1px 1px, #000 -1px -1px;
+  }
+  header + * > footer > a:hover {
+    text-decoration: none;
+  }
+  header + * > footer > a:first-child {
+    position: absolute;
+    bottom: 0;
+  }
+  header + * > footer > a:first-child + a {
+    position: absolute;
+    top: 0;
+  }
+  header + * > footer > a:only-child {
+    bottom: auto;
+  }
+  header + * > footer > a:before {
+    display: block;
+    font: 80px/35px arial, verdana;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  a[rel~="prev"]:before {
+    content: "«";
+  }
+  a[rel~="next"]:before {
+    content: "»";
+  }
+  a[href="#comments"]:before,
+  footer > a[rel~="bookmark"]:before {
+    content: "#";
+    font-size: 60px;
+    line-height: 52px;
+  }
+  a[title^="Delete"]:before {
+    content: "x";
+    font-size: 60px;
+  }
+
+  /**
+   * Page Footer
+   */
+
+  body > footer {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 50%;
+    margin-right: -355px;
+  }
+  body > footer > small {
+    display: block;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  body > footer a,
+  footer > form {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  body > footer a {
+    margin-top: 4px;
+    height: 18px;
+    width: 18px;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body > footer a:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  footer a[rel="alternate"] {
+
+    /**
+     * new
+     */
+
+    margin-right: 0;
+
+    /**
+     * margin-right: 1px; margin-top: 4px; width: 17px; height: 17px;
+     */
+
+  }
+  footer a[rel="alternate"]:before {
+    display: block;
+    content: url(/static/rss.svg);
+  }
+  footer a[rel="license"] {
+    margin-right: 0px;
+
+    /**
+     * new
+     */
+
+    margin-right: 30px;
+  }
+  footer a[rel="license"]:before {
+    display: block;
+    content: url(/static/by.png);
+  }
+  footer > a[href*="git"] {
+    margin-right: 30px;
+
+    /**
+     * new
+     */
+
+    margin-right: 60px;
+  }
+  footer > a[href*="git"]:before {
+    display: block;
+    content: url(/static/github.png);
+  }
+  footer > a[rel="search"] {
+    margin-top: 3px;
+    margin-right: 60px;
+
+    /**
+     * new
+     */
+
+    margin-right: 90px;
+    text-decoration: none !important;
+  }
+  footer > a[rel="search"]:before {
+    display: block;
+    content: "?";
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    font-size: 18px;
+    height: 18px;
+    text-align: center;
+  }
+  footer > a[rel="search"]:hover:before {
+    color: red;
+  }
+  footer > form {
+    margin-right: 60px;
+    padding: 25px 5px 5px;
+
+    /**
+     * new
+     */
+
+    margin-right: 90px;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border: solid 1px;
+  }
+  footer > form:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  footer > form:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    content: "";
+    background: rgba(255, 255, 255, 0.3);
+    height: 20px;
+    width: 15px;
+    border-right: rgba(170, 0, 0, 0.3) solid 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-right: none;
+    width: 20px;
+  }
+  footer input[type="search"] {
+    background: #fff;
+    border: black solid 1px;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 140px;
+    float: left;
+    padding: 2px;
+    font-size: 12px;
+    line-height: 1;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  footer input[type="submit"] {
+    height: 20px;
+    padding: 0;
+    position: absolute;
+    top: 2px;
+    background: transparent;
+    border: none;
+    text-transform: lowercase;
+    cursor: pointer;
+  }
+
+  /**
+   * Color Scheme
+   */
+
+  html {
+    background: #8191a4 fixed;
+    color: #000;
+    background-image: -webkit-gradient(
+    linear, 0 0, 0 100%, color-stop(0, rgba(0, 0, 0, 0.15)),
+    color-stop(0.2, transparent), color-stop(0.8, transparent),
+    color-stop(1, rgba(0, 0, 0, 0.15))
+);
+    background-image: -moz-linear-gradient(
+    -90deg, rgba(0, 0, 0, 0.15) 0%,
+    transparent 20%, transparent 80%,
+    rgba(0, 0, 0, 0.15) 100%
+);
+  }
+  body > header,
+  footer > form,
+  head,
+  a[href][rel~=home] {
+    background: #8191a4;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 12px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 12px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 12px;
+  }
+  body > header {
+    background-image: -webkit-gradient(
+    linear, 0 0, 0 100%, color-stop(0, rgba(0, 0, 0, 0.15)),
+    color-stop(0.5, transparent)
+);
+    background-image: -moz-linear-gradient(
+    -90deg, rgba(0, 0, 0, 0.15) 0%,
+    transparent 50%
+);
+  }
+  head {
+    background-image: -webkit-gradient(
+    linear, 0 0, 0 100%, color-stop(0.5, transparent),
+    color-stop(1, rgba(0, 0, 0, 0.15))
+);
+    background-image: -moz-linear-gradient(
+    -90deg, transparent 50%,
+    rgba(0, 0, 0, 0.15) 100%
+);
+  }
+  body {
+
+    /**
+     * text-shadow: rgba(0, 0, 0, 0.025) 0 -1px 0, rgba(255, 255, 255, 0.2) 0 1px 0;
+     */
+
+    text-shadow: #718194 0 -1px 0, #91a1b4 0 1px 0;
+  }
+  pre,
+  blockquote,
+  figure,
+  textarea,
+  input {
+    text-shadow: none;
+    background: rgba(0, 0, 0, 0.04);
+  }
+  a[href][rel~="home"] {
+    text-shadow: #fff 1px 1px;
+  }
+  a[rel~="home"] {
+    border-color: #fff;
+  }
+  header + * h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  dt,
+  nav a[href]:hover,
+  a[href][rel~="tag"],
+  a[href][rel~="self"],
+  a[href][rel~="directory"],
+  blockquote:before {
+    color: #000;
+  }
+  a[rel~="home"]:hover,
+  footer > a:hover {
+    border-color: black;
+  }
+  label:hover,
+  h3 > a[href][rel~="related"] {
+    color: black;
+  }
+  a:link,
+  form[role="button"] > input {
+    color: #fff;
+  }
+  a:visited {
+    color: #fff;
+  }
+  nav a[href],
+  header + * > footer > a[href],
+  footer input[type="submit"] {
+    color: #fff;
+  }
+  label,
+  label ~ input[type="submit"],
+  h1 + time {
+    color: #fff;
+  }
+  img,
+  label > input,
+  textarea {
+    border-color: #333;
+  }
+  body > header,
+  head,
+  footer > form {
+    border-color: #29261f;
+  }
+  input,
+  textarea {
+    color: #000;
+  }
+  a[href][rel~="home"] {
+    color: #8191a4;
+  }
+  hr,
+  blockquote:before {
+    text-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0;
+  }
+  body > header + * > footer > a[href]:before {
+    color: #333;
+    text-shadow: rgba(255, 255, 255, 0.75) 1px 1px 1px;
+  }
+
+  /**
+   * testing -----------------
+   */
+
+
+  /**
+   * pre { background: rgba(255, 255, 255, 0.7); box-shadow: #333 0px 0px 6px; }
+   */
+
+}
+
+
+/**
+ * Media Queries
+ */
+
+@media print {
+  html {
+    width: auto;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body:before,
+  body:after,
+  body > header,
+  footer,
+  h1 + time,
+  form {
+    display: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+  }
+  pre,
+  blockquote,
+  figure,
+  aside[role="note"] {
+    page-break-inside: avoid;
+  }
+}
+
+
+/**
+ * Adjustment
+ */
+
+@media (max-width: 840px) {
+
+  /**
+   * change design into a fluid layout
+   */
+
+  @viewport  {
+    width: device-width;
+    zoom: 1.0;
+
+    /**
+     * user-zoom: fixed;
+     */
+
+  }
+
+  html,
+  body > header > * {
+    width: auto;
+  }
+  header + * > footer {
+    left: auto;
+    margin-left: 0;
+    right: 0;
+  }
+  h1 + time {
+    margin-right: 0;
+    right: 100px;
+  }
+  body > footer {
+    right: 60px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 760px) {
+  nav li:nth-child(3),
+  form > p {
+    display: none;
+  }
+  article form {
+    overflow: hidden;
+  }
+  label {
+    font-size: 9px;
+    border: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 690px) {
+  label > input {
+    width: 50%;
+  }
+}
+
+
+/**
+ * at this point, its safe to assume the person is probably using a mobile device that doesnt support position: fixed
+ */
+
+@media (max-width: 600px) {
+  html {
+    overflow: auto;
+    padding-bottom: 40px;
+    background-image: none;
+  }
+  body {
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    border: none;
+    overflow: hidden;
+  }
+  a[rel~=home] {
+    margin-left: 10px;
+  }
+  header + * h1 {
+    padding-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  body > footer {
+    right: 5px;
+  }
+  body > header + * > footer {
+    height: auto;
+    width: auto;
+    top: 30px;
+    margin: 0 10px 0 0;
+  }
+  body > header + * > footer > a[href] {
+    position: static;
+    text-shadow: none;
+    float: left;
+    margin: 0 0 0 20px;
+    width: auto;
+    height: auto;
+    font-size: 11px;
+  }
+  body > header + * > footer > a:before {
+    display: none;
+  }
+  nav ul {
+    margin-left: 60px;
+  }
+  head {
+    display: none;
+  }
+  body > header,
+  body > footer,
+  body > header + * > footer {
+    position: absolute;
+  }
+}
+
+@media (max-width: 460px) {
+  nav li:nth-child(2) {
+    display: none;
+  }
+  footer > small {
+    letter-spacing: 0;
+  }
+  label > input {
+    width: 35%;
+  }
+}
+
+@media (max-width: 320px) {
+  footer > small {
+    font-size: 8px;
+  }
+  nav li:last-child {
+    display: none;
+  }
+}
+
+
+/**
+ * Work In Progress
+ */
+
+
+/**
+ * squeeze: could increase the total html width to compensate for larger margins
+ */
+
+body {
+  margin: 0 100px 0 80px;
+}
+body > footer {
+  margin-right: -320px;
+}
+a[rel~="home"] {
+  margin-left: 21px;
+}
+nav > ul {
+  margin-left: 80px;
+}
+header + * > footer {
+  margin-left: 340px;
+}
+article > footer > ul {
+  list-style: none;
+  margin: 0;
+  padding: 2px;
+  margin-top: 140px;
+  text-align: right;
+  border-top: #333 solid 1px;
+  padding-top: 15px;
+}
+article > footer > ul > li {
+  margin: 0;
+  padding: 0;
+  text-shadowz: #333 1px 1px 0px;
+  font-family: "Euphemia UCAS", "Trebuchet MS", sans-serif;
+  font-size: 12px;
+}
+
+/**
+ * article > footer > ul > li:before { content: "\2605"; content: "•"; font-family: verdana; float: left; text-shadow: none; }
+ */
+
+article > footer > ul > li > a:hover {
+  text-decoration: none;
+}
+article > footer > ul > li > a:hover {
+  color: #000;
+}
+article > footer > ul > li > a[rel]:hover {
+  color: #fff;
+}
+article > footer > ul > li > a:before {
+  content: "•";
+  color: #000;
+  font-family: verdana;
+  float: left;
+  text-shadow: none;
+}
+
+
+article > footer > ul > li > a[rel]:before {
+  content: "\2605";
+  hi: "again";
+  hey: "uhoh";
+}
+  article > footer > ul > li > a[rel]:before > test {
+    hello: "world";
+  }
+    article > footer > ul > li > a[rel]:before > test > test2 {
+      another: "one";
+    }
