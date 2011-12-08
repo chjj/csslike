@@ -24,7 +24,7 @@ want to keep it in line with potential standards.
 ## Syntax
 
 ``` css
-@var $green #00ff00
+@var $green #00ff00;
 
 @trait bg {
   background: $green;
