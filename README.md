@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/chjj/csslike.png)](http://travis-ci.org/chjj/csslike)
 # csslike
 
 __csslike__ is a CSS preprocessor designed to follow the latest www-style
